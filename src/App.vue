@@ -34,7 +34,7 @@
             axios.get(`/api/getdevices`)
                 .then(response => {
                     // JSON responses are automatically parsed.
-                    this.posts = response.data
+                    this.results = response.data
                 })
                 .catch(e => {
                     this.errors.push(e)
