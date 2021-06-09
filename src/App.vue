@@ -20,11 +20,11 @@
     </div>
 </template>
 
-<!--
-<script>
-    import axios from 'axios';
 
-    export default {
+<script>
+import axios from 'axios';
+
+  <!--  export default {
         data() {
             return {
                 results: [],
@@ -34,7 +34,7 @@
 
         // Fetches posts when the component is created.
         created() {
-            axios.get(`/api/getdevices`)
+            axios.get(`/api/GetDevices`)
                 .then(response => {
                     // JSON responses are automatically parsed.
                     this.results = response.data
@@ -43,6 +43,6 @@
                     this.errors.push(e)
                 })
         }
-    };
+    }; -->
 </script>
-    -->
+    
