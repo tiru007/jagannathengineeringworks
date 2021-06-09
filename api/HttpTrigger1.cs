@@ -15,7 +15,7 @@ namespace PostDevice.Function
     {
         [FunctionName("PostDevice")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = "PostDevice")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "PostDevice")] HttpRequest req,
             [CosmosDB(
                 databaseName: "Devices",
                 collectionName: "Devices",

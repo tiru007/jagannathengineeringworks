@@ -13,7 +13,7 @@ namespace GetDevices.Function
 
             public string RequestedDate { get; set; }
 
-            public DateTime CompletedDate { get; set; }
+            public String CompletedDate { get; set; }
 
             public Int64 ApproximateAmount { get; set; }
 
