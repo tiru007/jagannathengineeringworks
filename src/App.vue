@@ -20,11 +20,11 @@
     </div>
 </template>
 
-
+<!--
 <script>
 import axios from 'axios';
 
-  <!--  export default {
+    export default {
         data() {
             return {
                 results: [],
@@ -43,6 +43,5 @@ import axios from 'axios';
                     this.errors.push(e)
                 })
         }
-    }; -->
-</script>
-    
+    };
+</script> -->
