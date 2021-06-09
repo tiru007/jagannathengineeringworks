@@ -25,10 +25,10 @@ namespace GetDevices.Function
                 collectionName: "Devices",
                 ConnectionStringSetting = "CosmosDbConnectionString",
                 SqlQuery = "SELECT * FROM c order by c._ts desc")]
-                IEnumerable<Device> device,
+                IEnumerable<Device> devices,
             ILogger log)
         {
-          return new OkObjectResult(device);
+          return new OkObjectResult(devices);
         }
     }
 }
