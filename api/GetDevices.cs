@@ -18,7 +18,7 @@ namespace GetDevices.Function
     public static class GetDevices
     {
         [FunctionName("GetDevices")]
-        public static async Task<HttpResponseMessage> Run(
+        public static IActionResult Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequestMessage req,
             [CosmosDB(
                 databaseName: "Devices",
@@ -28,14 +28,7 @@ namespace GetDevices.Function
                 IEnumerable<Device> device,
             ILogger log)
         {
-            var jsonToReturn = JsonConvert.SerializeObject(device);            
-            var result = new StringContent(jsonToReturn, Encoding.UTF8, "application/json");
-            HttpResponseMessage response = req.CreateResponse(HttpStatusCode.OK, result);
-            return response;
-
-            //string json = JsonConvert.SerializeObject(device);
-
-            //return new OkObjectResult(json);
+          return new OkObjectResult(device);
         }
     }
 }
