@@ -1,5 +1,5 @@
 <template>
-    <div>Hello {{ value }}</div>
+    <div>Hello</div>
     <div>
         <table class="table table-striped">
             <thead>
